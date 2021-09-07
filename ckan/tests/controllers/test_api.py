@@ -8,7 +8,7 @@ import re
 
 import pytest
 import six
-
+from io import BytesIO
 from ckan.lib.helpers import url_for
 import ckan.tests.helpers as helpers
 from ckan.lib import uploader as ckan_uploader
@@ -75,8 +75,8 @@ class TestApiController(object):
         )
         env = {"REMOTE_USER": six.ensure_str(user["name"])}
 
-        content = six.ensure_binary("upload-content")
-        upload_content = six.BytesIO(content)
+        content = six.ensure_binary('upload-content')
+        upload_content = BytesIO(content)
         postparams = {
             "name": "test-flask-upload",
             "package_id": pkg["id"],

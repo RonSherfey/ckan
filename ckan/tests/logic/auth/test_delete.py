@@ -4,7 +4,6 @@
 """
 
 import pytest
-from six import string_types
 
 import ckan.logic.auth.delete as auth_delete
 import ckan.tests.helpers as helpers
@@ -195,7 +194,7 @@ class TestPackageMemberDeleteAuth(object):
 
         return {
             'model': model,
-            'user': user if isinstance(user, string_types) else user.get('name')
+            'user': user if isinstance(user, str) else user.get('name')
         }
 
     @pytest.fixture(autouse=True)
