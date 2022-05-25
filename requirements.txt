@@ -67,7 +67,7 @@ polib==1.1.1
     # via -r requirements.in
 psycopg2==2.9.1
     # via -r requirements.in
-pyjwt==2.1.0
+pyjwt==2.4.0
     # via -r requirements.in
 pyparsing==2.4.7
     # via packaging
@@ -94,7 +94,7 @@ pyyaml==5.4.1
     # via -r requirements.in
 redis==3.5.3
     # via rq
-repoze.who==2.3
+repoze-who==2.3
     # via -r requirements.in
 requests==2.25.1
     # via
@@ -126,15 +126,15 @@ webassets==2.0
 webencodings==0.5.1
     # via bleach
 webob==1.8.7
-    # via repoze.who
+    # via repoze-who
 werkzeug[watchdog]==2.0.1
     # via
     #   -r requirements.in
     #   flask
-zope.interface==5.4.0
+zope-interface==5.4.0
     # via
     #   -r requirements.in
-    #   repoze.who
+    #   repoze-who
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
