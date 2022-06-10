@@ -1,7 +1,7 @@
 # These are packages that are required by ckan developers - for running ckan in debug mode, running ckan tests, building the docs and to pip-compile the requirements.in file.
 
 beautifulsoup4==4.9.3
-cookiecutter==1.7.3
+cookiecutter==2.1.1
 coveralls   #Let Unpinned - Requires latest coveralls
 docutils==0.16
 factory-boy==3.2.0
